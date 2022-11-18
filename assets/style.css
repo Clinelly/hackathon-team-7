@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#index_div_one {
+    background-color: blue;
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+
+#game_div_one {
+    background-color: red;
+    height: auto;
+    width: 80%;
+    margin: auto;
+
+}
