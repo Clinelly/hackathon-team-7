@@ -18,3 +18,41 @@
     margin: auto;
 
 }
+
+.question-area{
+    background-color: rgb(16, 19, 20) ;
+  }
+  .question-panel{
+    background-color: rgb(179, 206, 56);
+    color:#F6F3E8ff;
+    font-family:'Roboto', sans-serif;
+    font-size: 15px;
+    height: 30vh;
+  }
+  .question-content{
+    font-size: 30px;
+    padding:10px;
+    font-weight: 400; 
+  }
+
+
+  /* --------------------------------------------> media queries */
+@media only screen and (max-width: 800px){
+    .question-content {
+      font-size: 20px;
+      margin-top: 5px;
+     
+    }
+}
+
+.answers{
+    background-color: #F6F3E8ff;
+    font-family: 'Roboto', sans-serif;
+    color: #294A58ff;
+    font-size:20px;
+    margin: 0px 10px;
+    
+    margin-bottom: 10px;
+    height:12vh;
+    padding:15px;
+  }
