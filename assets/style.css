@@ -35,6 +35,10 @@
     font-weight: 400; 
   }
 
+  .key-style {
+    height: 150px;
+    min-width: 50px;
+  }
 
   /* --------------------------------------------> media queries */
 @media only screen and (max-width: 800px){
