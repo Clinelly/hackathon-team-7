@@ -39,23 +39,16 @@ let getNewQuestion = () => {
         answer3.innerHTML = all_answers[2];
         answer4.innerHTML = all_answers[3];
 
-        }
+    }
 
     //questionCounter++
     //when user clicks a button get a value
 
-    [...quizAnswers].forEach(answer => answer.addEventListener("click", selectAnswer))
+[...quizAnswers].forEach(answer => answer.addEventListener("click", selectAnswer))
 
 function selectAnswer (e) {
-    const userChoice = e.target.innerHTML;
-   
-    
-}
+    const userChoice = e.target.innerHTML; 
 
-
-
-
-function selectAnswers (e) {
 
 }
 
