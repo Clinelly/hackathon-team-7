@@ -4,6 +4,10 @@ const question = document.getElementById("question-content");
 // List of worlds
 const words = ["css", "dublin", "javascript", "code"]
 
+//Select a random world from from list
+let selectedWord = words[Math.floor(Math.random() * words.length)];
+console.log(selectedWord);
+
 let questions = [{
     question: 'In which FIFA world cup was "Waka Waka" played?',
     choice1: '2002',
@@ -37,8 +41,6 @@ let getNewQuestion = () => {
 }
 // display keyboard
 function loadKeyboard() {
-    //Select a random world from from list
-    let selectedWord = words[Math.floor(Math.random() * words.length)];
     //Create keys
     for (let i = 0; i < selectedWord.length; i++) {
         let newKey = document.createElement('div');
@@ -47,5 +49,14 @@ function loadKeyboard() {
         newKey.classList.add('col', 'border', 'border-dark', 'text-center', 'key-style');
         keyboardArea.appendChild(newKey);
     }    
+}
+// check final answer
+function checkAnswer() {
+    let answerValue = document.getElementById('finalAnswer').value;
+    if (answerValue == selectedWord) {
+        alert("you won!");
+    } else {
+        alert("wrong answer");
+    }
 }
 startQuiz()
