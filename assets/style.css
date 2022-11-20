@@ -83,6 +83,9 @@ body {
   .key-style {
     height: 150px;
     min-width: 50px;
+    max-width: 50px;
+    font-size: 50px;
+    padding-top: 25px;
   }
 
 /* Style for 'About' Page */
