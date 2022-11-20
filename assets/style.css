@@ -4,11 +4,51 @@
     border: none;
 }
 
+/*Header and nav*/
+body {
+  text-align: center;
+}
+
 #index_div_one {
-    background-color: blue;
     height: auto;
     width: 80%;
     margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/*greetings div*/
+.greetings_container, .rules_container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.greetings_center, .rules_center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #game_div_one {
