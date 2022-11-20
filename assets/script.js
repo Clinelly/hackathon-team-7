@@ -22,7 +22,7 @@ let answersCounter = -1
 
 let questions = [{
         question: 'Who sings this song',
-        incorrect: ["2002", "2006", "2010"],
+        incorrect: ["Sakira", "Beyonce", "Adele"],
         correct: ["Lady Gaga"],
         path: "badRomance.mp4",
 
@@ -30,73 +30,45 @@ let questions = [{
     {
 
         question: 'In which FIFA world cup was "Waka Waka" played?',
-
-        choice1: '2002',
-        choice2: '2006',
-        choice3: '2010',
-        choice4: '2014',
-        answer: 3,
+        incorrect: ["2002", "2006", "2010"],
+        correct: ["2014"],
+        
     },
     {
         question: "Who sings the song 'La camisa negra'? ",
-        choice1: "Ricky Martin",
-        choice2: "Enrique Iglesias",
-        choice3: "Juanes",
-        choice4: "Luis Fonsi",
-        answer: 3,
+        incorrect: ["Ricky Martin", "Louis Fonsi", "Eminem"],
+        correct: ["Juanes"],
     },
     {
         question: "Where was the artist 'Sia'? born",
-        choice1: "US",
-        choice2: "Canada",
-        choice3: "Australia",
-        choice4: "New Zealand",
-        answer: 3,
+        incorrect: ["US", "Canada", "New Zealand"],
+        correct: ["Australia"],
+       
     },
     {
         question: "What artist has released the most albums?",
-        choice1: "Buckethead",
-        choice2: "Frank Zappa",
-        choice3: "Elvis Presley",
-        choice4: "Masami Akita",
-        answer: 4,
+        incorrect: ["Buckethead", "Frank Zappa", "Elvis Presley"],
+        correct: ["Masami Akita"],
     },
     {
         question: "Where has the highest-attended concert been held?",
-        choice1: "Moscow",
-        choice2: "Rio de Janeiro",
-        choice3: "Paris",
-        choice4: "Philadelphia",
-        answer: 2,
+        incorrect: ["Moscow", "Paris", "Philadelphia"],
+        correct: ["Rio de Janeiro"],
     },
     {
         question: "The average time listening to music per week is:",
-        choice1: "2 hours",
-        choice2: "6 hours",
-        choice3: "12 hours",
-        choice4: "18 hours",
-        answer: 4,
+        incorrect: ["2 hours", "6 hours", "12 hours"],
+        correct: ["18 hours"],
     },
     {
         question: "The Mozart effect is related to:",
-        choice1: "Classical music",
-        choice2: "Vocal music",
-        choice3: "Hip hop",
-        choice4: "Reggae",
-        answer: 1,
+        incorrect: ["Hip hop", "Vocal music", "Reggae"],
+        correct: ["Classical music"]
     },
     {
         question: "The oldest musical instrument found to date is:",
-        choice1: "trumpet",
-        choice2: "flute",
-        choice3: "lithophone",
-        choice4: "bullroarer",
-        answer: 2,
-
-        incorrect: ["2002", "2006", "2010"],
-        correct: ["2014"]
-
-
+        incorrect: ["lithophone", "bullroarer", "trumpet"],
+        correct: ["flute"]
     },
     {
         question: "Who sings the song 'La camisa negra'? ",
