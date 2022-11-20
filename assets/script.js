@@ -12,6 +12,7 @@ let isButtonClicked = true;
 
 
 
+
 let questions = [
 {
         question: 'Who sings this song',
@@ -22,6 +23,19 @@ let questions = [
           
  },
 {
+
+// List of worlds
+const words = ["css", "dublin", "javascript", "code"]
+
+//Select a random world from from list
+let selectedWord = words[Math.floor(Math.random() * words.length)];
+console.log(selectedWord);
+
+// Tracks user answers 
+let userAnswersCounter = 0
+
+let questions = [{
+
     question: 'In which FIFA world cup was "Waka Waka" played?',
     incorrect: ["2002", "2006", "2010"],
     correct: ["2014"]
@@ -38,9 +52,14 @@ let questions = [
 // start the quiz
 let startQuiz = () => {
     availableQuestions = [...questions];
+
     getNewQuestion()
     curr_track.src = availableQuestions[turn].path;
     curr_track.play();
+
+    loadKeyboard();
+    getNewQuestion();
+
 }
 
 next_button.addEventListener("click", () => {
@@ -91,4 +110,36 @@ function selectAnswer (e) {
 
 
 
+
+=======
+// display keyboard
+function loadKeyboard() {
+    //Create keys
+    for (let i = 0; i < selectedWord.length; i++) {
+        let newKey = document.createElement('div');
+        newKey.setAttribute('id','keyboard'+i);
+        let keyboardArea = document.getElementById('keyboard-area');
+        newKey.classList.add('col', 'border', 'border-dark', 'text-center', 'key-style');
+        keyboardArea.appendChild(newKey);
+    }    
+}
+
+// check final answer
+function checkAnswer() {
+    let answerValue = document.getElementById('finalAnswer').value;
+    if (answerValue == selectedWord) {
+        alert("You won!");
+        location.reload();
+    } else {
+        if (userAnswersCounter >=2) {
+            alert("You lost the game.");
+            window.location = "https://8000-marcellomuy-hackathonte-t5d6ye6aw8i.ws-eu77.gitpod.io/index.html"
+        } else {
+            alert("Wrong answer.");
+            userAnswersCounter++;
+        }
+    }
+}
+
+startQuiz()
 
