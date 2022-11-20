@@ -44,6 +44,25 @@
 #about_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+#about_container h1, h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  border: 1px solid black;
+  align-self: center;
+  width: 250px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+#about_foot {
+  position: fixed;
 }
 
   /* --------------------------------------------> media queries */
