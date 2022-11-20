@@ -15,10 +15,10 @@ const words = ["css", "dublin", "javascript", "code"]
 
 //Select a random world from from list
 let selectedWord = words[Math.floor(Math.random() * words.length)];
-console.log(selectedWord);
 
 // Tracks user answers 
-let userAnswersCounter = 0
+let wrongAnswersCounter = 0
+let answersCounter = -1
 
 let questions = [{
         question: 'Who sings this song',
@@ -153,9 +153,10 @@ function selectAnswer(e) {
     const correctChoice = availableQuestions[turn].correct[0];
     if (userChoice === correctChoice) {
         e.target.style.backgroundColor = "green";
+        displayLetter();
     } else {
         e.target.style.backgroundColor = "red";
-
+        dontDisplayLetter();
     }
     setTimeout(() => {
         e.target.style.backgroundColor = "#F6F3E8ff";
@@ -176,6 +177,25 @@ function loadKeyboard() {
     }
 }
 
+// Display letter
+function displayLetter() {
+    answersCounter++;
+    for (let i = answersCounter; i == answersCounter && i < selectedWord.length; i++) {
+        let keyDiv = document.getElementById('keyboard' + i);
+        keyDiv.innerHTML = selectedWord.charAt(i);
+        keyDiv.style.backgroundColor = "green";
+}
+}
+
+//Don't display letter
+function dontDisplayLetter() {
+    answersCounter++;
+    for (let i = answersCounter; i == answersCounter && i < selectedWord.length; i++) {
+        let keyDiv = document.getElementById('keyboard' + i);
+        keyDiv.style.backgroundColor = "red";
+}
+}
+
 // check final answer
 function checkAnswer() {
     let answerValue = document.getElementById('finalAnswer').value;
@@ -183,12 +203,12 @@ function checkAnswer() {
         alert("You won!");
         location.reload();
     } else {
-        if (userAnswersCounter >= 2) {
+        if (wrongAnswersCounter >= 2) {
             alert("You lost the game.");
             window.location = "https://8000-marcellomuy-hackathonte-t5d6ye6aw8i.ws-eu77.gitpod.io/index.html"
         } else {
             alert("Wrong answer.");
-            userAnswersCounter++;
+            wrongAnswersCounter++;
         }
     }
 }
