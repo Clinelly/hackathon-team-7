@@ -67,11 +67,10 @@ li a {
     color:#F6F3E8ff;
     font-family:'Roboto', sans-serif;
     font-size: 15px;
-    height: 30vh;
+    height: 20vh;
   }
   .question-content{
     font-size: 30px;
-    padding:10px;
     font-weight: 400; 
   }
 
@@ -80,23 +79,85 @@ li a {
     min-width: 50px;
   }
 
+/* Style for 'About' Page */
+
+nav {
+  height: auto;
+  background-color:rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  font-size: x-large;
+}
+
+nav > a {
+  padding: 10px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#about_body {
+  background: url(../assets/images/music_stage_background.webp) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+}
+
+#about_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin-top: 11%;
+}
+
+#about_container h1, h2 {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.profile {
+  display: flex;
+  align-self: center;
+  width: fit-content;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#about_foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: xx-large;
+  text-decoration: none;
+}
+
+#about_foot i {
+  color: aliceblue;
+}
+
   /* --------------------------------------------> media queries */
 @media only screen and (max-width: 800px){
     .question-content {
-      font-size: 20px;
-      margin-top: 5px;
+      font-size: 25px;
+      margin-top: 15px;
      
     }
 }
 
-.answers{
+.answers,
+#next-button {
     background-color: #F6F3E8ff;
     font-family: 'Roboto', sans-serif;
-    color: #294A58ff;
+    color: rgb(19, 21, 22);
     font-size:20px;
     margin: 0px 10px;
-    
     margin-bottom: 10px;
-    height:12vh;
-    padding:15px;
+    height:10vh;
+   
   }

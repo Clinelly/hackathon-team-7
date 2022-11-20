@@ -11,31 +11,37 @@
        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css">
+    
 
     <title>Hackathon Hero | Game</title>
 </head>
 <body>
-    <div id = "game_div_one">
-        <a href="index.html" class="active">Home</a>
-    </div>
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html" class="active">Game</a>
+      <a href="about.html">About</a>
+  </nav>
     <!-- Questions section-->  
     <section class="question-area">
         <div class="container-fluid ">
            <div class="row justify-content-center ">
-              <div class="col-xs-12 col-md-8 m-2 question-panel">
-                 <p class= "question-content mt-lg-5" id="question-content">Question Loading...</p>
+              <div class="col-xs-12 col-md-6 m-2 question-panel">
+                 <p class= "question-content text-center mt-lg-5" id="question-content">Question Loading...</p>
               </div>
            </div>
         </div>
         <!-- Answers section-->  
         <div class="container-fluid mt-lg-3 mt-md-3 answer-area">
            <div class="row justify-content-center">
-              <div class="col-md-4 col-xs-6 pt-lg-4 text-center answers" id="option1"></div>
-              <div class="col-md-4 col-xs-6 pt-lg-4 text-center answers" id="option2"></div>
+              <div class="col-md-3 col-xs-6 pt-lg-3 text-center answers" id="option1"></div>
+              <div class="col-md-3 col-xs-6 pt-lg-3 text-center answers" id="option2"></div>
            </div>
            <div class="row justify-content-center">
-              <div class="col-md-4 col-xs-6 pt-lg-4 text-center answers" id="option3"></div>
-              <div class="col-md-4 col-xs-6 pt-lg-4 text-center answers" id="option4"></div>
+              <div class="col-md-3 col-xs-6 pt-lg-4 text-center answers" id="option3"></div>
+              <div class="col-md-3 col-xs-6 pt-lg-4 text-center answers" id="option4"></div>
+           </div>
+           <div class="row justify-content-center">
+           <div class="col-md-1 text-center" id="next-button">Next</div>
            </div>
         </div>
      </section>
