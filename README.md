@@ -30,7 +30,10 @@
 
 ## Credits
 
-* [Be sure to credit any assets that are not yours](https://www.example.com)
+* [Stage Background by Upklyak on FreePik](https://www.freepik.com/free-vector/movie-theater-with-white-screen-curtains-seats_33702600.htm#page=2&query=music%20audience&position=23&from_view=search&track=sph#position=23&page=2&query=music%20audience)
+
+## Developer Team
+
 * [Andrés García](https://www.linkedin.com)
 * [Ashley Rolfe](https://www.linkedin.com)
 * [Konstantina Strantzali](https://www.linkedin.com)
