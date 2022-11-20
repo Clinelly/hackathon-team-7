@@ -12,6 +12,7 @@ body {
 #header {
   display: flex;
   justify-content: space-between;
+  color: white;
 }
 
 #header_div {
@@ -19,12 +20,22 @@ body {
 }
 
 /*greetings div*/
+
+.justify-content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .greetings_container, .rules_container {
   height: 200px;
   position: relative;
-  border: 3px solid green; 
   margin-top: 30px;
   margin-bottom: 30px;
+  color: white;
+  background-color: rgb(179, 206, 56);
+  width: 50%;
+  align-self: center;
 }
 
 .greetings_center, .rules_center {
@@ -34,6 +45,16 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+
+#home_body {
+  background: url(../assets/images/music_concert_background.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
 }
 
 #game_div_one {
@@ -62,6 +83,9 @@ body {
   .key-style {
     height: 150px;
     min-width: 50px;
+    max-width: 50px;
+    font-size: 50px;
+    padding-top: 25px;
   }
 
 /* Style for 'About' Page */
