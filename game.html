@@ -11,21 +11,33 @@
        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css">
-    
-
     <title>Hackathon Hero | Game</title>
 </head>
 <body>
-   <div id="header">
-      <div id="header_div">
-         <h1>Hackathon Hero!</h1>
-      </div>
-      <nav>
-         <a href="index.html">Home</a>
-         <a href="game.html" class="active">Game</a>
-         <a href="about.html">About</a>
-     </nav>
-   </div>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                   <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="game.html">Game</a>
+                   </li>
+                   <li class="nav-item dropdown">
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </nav>
+  </header>
     <!-- Questions section-->  
     <section class="question-area">
         <div class="container-fluid ">
@@ -52,6 +64,7 @@
      </section>
      <!-- Keyboard section -->
      <section>
+         <div class="container-fluid ">
       <div class="mt-5">
          <div id="keyboard-area" class="row"></div>
       </div>
@@ -63,6 +76,7 @@
             <input id="finalAnswer" class="border mt-2" type="text" placeholder="Type answer here">
             <input type="submit">
          </form>
+      </div>
      </section>
       
       
