@@ -16,7 +16,7 @@
 </head>
 <body>
     <div id = "game_div_one">
-        <a href="index.html" class="active" target="_blank">Home</a>
+        <a href="index.html" class="active">Home</a>
     </div>
     <!-- Questions section-->  
     <section class="question-area">
@@ -47,7 +47,7 @@
      </section>
      <!-- Answer section -->
      <section class="row">
-         <form class="text-center" type="submit" onsubmit="checkAnswer();">
+         <form class="text-center" type="submit" onsubmit="checkAnswer();return false">
             <label for="finalAnswer"></label>
             <input id="finalAnswer" class="border mt-2" type="text" placeholder="Type answer here">
             <input type="submit">
