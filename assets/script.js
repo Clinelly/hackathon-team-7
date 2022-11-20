@@ -30,8 +30,8 @@ let startQuiz = () => {
 
 // display questions & answers
 let getNewQuestion = () => {
-    const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
-    const currentQuestion = availableQuestions[questionsIndex];
+    
+    const currentQuestion = availableQuestions[turn];
     question.innerText = currentQuestion.question;
     let all_answers = currentQuestion.incorrect.concat(currentQuestion.correct);
         answer1.innerHTML = all_answers[0];
@@ -41,13 +41,21 @@ let getNewQuestion = () => {
 
     }
 
-    //questionCounter++
-    //when user clicks a button get a value
-
+// get question's answer and apply a Click event to each of them
 [...quizAnswers].forEach(answer => answer.addEventListener("click", selectAnswer))
 
+// Change selected answer background when is correct or incorrect
 function selectAnswer (e) {
-    const userChoice = e.target.innerHTML; 
+    const userChoice = e.target.innerHTML;
+    const correctChoice = availableQuestions[turn].correct[0];
+    if (userChoice === correctChoice) {
+        e.target.style.backgroundColor = "green";
+    } else {
+        e.target.style.backgroundColor = "red";
+    }
+    
+
+  
 
 
 }
