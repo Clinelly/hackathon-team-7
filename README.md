@@ -3,22 +3,22 @@
 
 ![image info]()
 
+## User Stories
+
 ## How to play
 
-* Arrow keys - move
-* Space bar - shoot
-* Destroy all aliens to progress
+* Answer a multiple choice question.
+* A correct answer reveals a letter on the keyboard.
+* Guess the right word to win the game!
 
 ## Setup
 
 ### Deployed link
 
-[Click here to play!](https://www.example.com)
+[Click here to play!]()
 
 ### How to install
 
-1. Double click setup.exe
-2. Follow onscreen instructions
 
 ## Credits
 
