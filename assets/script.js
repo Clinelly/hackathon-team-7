@@ -8,6 +8,9 @@ const words = ["css", "dublin", "javascript", "code"]
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 console.log(selectedWord);
 
+// Tracks user answers 
+let userAnswersCounter = 0
+
 let questions = [{
     question: 'In which FIFA world cup was "Waka Waka" played?',
     choice1: '2002',
@@ -39,6 +42,7 @@ let getNewQuestion = () => {
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
 }
+
 // display keyboard
 function loadKeyboard() {
     //Create keys
@@ -50,13 +54,22 @@ function loadKeyboard() {
         keyboardArea.appendChild(newKey);
     }    
 }
+
 // check final answer
 function checkAnswer() {
     let answerValue = document.getElementById('finalAnswer').value;
     if (answerValue == selectedWord) {
-        alert("you won!");
+        alert("You won!");
+        location.reload();
     } else {
-        alert("wrong answer");
+        if (userAnswersCounter >=2) {
+            alert("You lost the game.");
+            window.location = "https://8000-marcellomuy-hackathonte-t5d6ye6aw8i.ws-eu77.gitpod.io/index.html"
+        } else {
+            alert("Wrong answer.");
+            userAnswersCounter++;
+        }
     }
 }
+
 startQuiz()
