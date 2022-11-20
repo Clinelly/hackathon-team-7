@@ -66,14 +66,14 @@ body {
 
 /* Style for 'About' Page */
 
-nav {
+#about_nav {
   height: auto;
   background-color:rgba(0, 0, 0, 0.5);
   width: fit-content;
   font-size: x-large;
 }
 
-nav > a {
+#about_nav > a {
   padding: 10px;
   text-decoration: none;
   color: aliceblue;
@@ -93,7 +93,7 @@ nav > a {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 #about_container {
@@ -102,13 +102,16 @@ nav > a {
   justify-content: center;
   align-items: center;
   height: auto;
-  width: 100%;
-  margin-top: 11%;
+  width: 50%;
+  margin: 11% auto auto;
+  background-color:rgba(0, 0, 0, 0.5);
+
 }
 
 #about_container h1, h2 {
   display: flex;
   justify-content: center;
+  color: antiquewhite;
   font-family: sans-serif;
 }
 
@@ -118,8 +121,13 @@ nav > a {
   width: fit-content;
   justify-content: center;
   margin-top: 5px;
+  color: antiquewhite;
   font-size: larger;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.profile a {
+  color: aqua;
 }
 
 #about_foot {
