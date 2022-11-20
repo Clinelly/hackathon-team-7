@@ -9,28 +9,13 @@ body {
   text-align: center;
 }
 
-#index_div_one {
-    height: auto;
-    width: 80%;
-    margin: auto;
-}
-
-.nav {
+#header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.nav li {
-  display: inline-block;
-}
-
-li a {
-  text-decoration: none;
+#header_div {
+  display: flex;
 }
 
 /*greetings div*/
@@ -92,6 +77,15 @@ nav > a {
   padding: 10px;
   text-decoration: none;
   color: aliceblue;
+}
+
+#header_about {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header_div_about {
+  display: none;
 }
 
 #about_body {
