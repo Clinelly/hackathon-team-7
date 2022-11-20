@@ -64,6 +64,9 @@ body {
     min-width: 50px;
   }
 
+  .model-link {
+  text-decoration: none;
+  }
 /* Style for 'About' Page */
 
 #about_nav {
