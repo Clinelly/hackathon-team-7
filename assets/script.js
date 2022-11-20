@@ -11,7 +11,7 @@ let turn = 0;
 let isButtonClicked = true;
 
 // List of worlds
-const words = ["css", "dublin", "javascript", "code"]
+const words = ["saxophone", "trombone", "xylophone", "ukulele"]
 
 //Select a random world from from list
 let selectedWord = words[Math.floor(Math.random() * words.length)];
