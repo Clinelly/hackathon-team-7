@@ -169,11 +169,22 @@ function selectAnswer(e) {
 function loadKeyboard() {
     //Create keys
     for (let i = 0; i < selectedWord.length; i++) {
-        let newKey = document.createElement('div');
-        newKey.setAttribute('id', 'keyboard' + i);
-        let keyboardArea = document.getElementById('keyboard-area');
-        newKey.classList.add('col', 'border', 'border-dark', 'text-center', 'key-style');
-        keyboardArea.appendChild(newKey);
+        if (i % 2 == 0) {
+            let newKey = document.createElement('div');
+            newKey.setAttribute('id', 'keyboard' + i);
+            let keyboardArea = document.getElementById('keyboard-area');
+            newKey.classList.add('col', 'border', 'border-dark', 'text-center', 'key-style');
+            keyboardArea.appendChild(newKey);
+        } else {
+            let newKey = document.createElement('div');
+            newKey.setAttribute('id', 'keyboard' + i);
+            let keyboardArea = document.getElementById('keyboard-area');
+            newKey.classList.add('col', 'border', 'border-dark', 'text-center', 'key-style');
+            newKey.style.backgroundColor = "black";
+            keyboardArea.appendChild(newKey);
+        }
+            
+
     }
 }
 
