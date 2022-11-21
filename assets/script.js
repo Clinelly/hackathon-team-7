@@ -22,7 +22,7 @@ let answersCounter = -1
 
 let questions = [{
         question: 'Who sings this song',
-        incorrect: ["Sakira", "Beyonce", "Adele"],
+        incorrect: ["Shakira", "Beyonce", "Adele"],
         correct: ["Lady Gaga"],
         path: "badRomance.mp4",
 
@@ -30,8 +30,8 @@ let questions = [{
     {
 
         question: 'In which FIFA world cup was "Waka Waka" played?',
-        incorrect: ["2002", "2006", "2010"],
-        correct: ["2014"],
+        incorrect: ["2002", "2006", "2014"],
+        correct: ["2010"],
         
     },
     {
