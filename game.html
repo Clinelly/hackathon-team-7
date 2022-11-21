@@ -43,7 +43,7 @@
         <div class="container-fluid ">
            <div class="row justify-content-center ">
               <div class="col-xs-12 col-md-6 m-2 question-panel">
-                 <p class= "question-content text-center mt-lg-3" id="question-content">Question Loading...</p>
+                 <p class= "question-content text-center mt-lg-2" id="question-content">Question Loading...</p>
               </div>
            </div>
         </div>
@@ -79,9 +79,9 @@
             <div class="col-auto">
               <input type="text" id="finalAnswer" class="form-control" aria-describedby="passwordHelpInline">
             </div>
-            <div class="col-auto">
+            <div class="col-auto" id="input-button">
               <span id="passwordHelpInline" class="form-text">
-               <input type="submit">
+               <input type="submit" id="input-button">
               </span>
             </div>
           </div>
@@ -96,6 +96,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-body">
                <h4 class="text-center">Oh no! Wrong Letter</h4>
+              
             </div>
          </div>
       </div>
@@ -105,10 +106,39 @@
          <div class="modal-content">
             <h5 class="modal-title" id="exampleModalLabel">Game Over</h5>
             <div class="modal-body">
-               <h4 class="text-center">Oh no! You lost the game!</h4>
+               <h4 class="text-center">You didnt find the hidden word!</h4>
             </div>
             <div class="modal-footer justify-content-center">
                <a class="btn btn-secondary btn-lg" id="button-tryAgain" href="game.html">Try Again</a>
+               <a class="btn btn-secondary btn-lg" id="button-home" href="index.html">Go Home</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal fade" id="noGuesses-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <h5 class="modal-title" id="exampleModalLabel">Game Over</h5>
+            <div class="modal-body">
+               <h4 class="text-center">No more guesses left! </h4>
+            </div>
+            <div class="modal-footer justify-content-center">
+               <a class="btn btn-secondary btn-lg" id="button-tryAgain" href="game.html">Try Again</a>
+               <a class="btn btn-secondary btn-lg" id="button-home" href="index.html">Go Home</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="modal fade" id="gameWin-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <h5 class="modal-title" id="exampleModalLabel">You won the game!</h5>
+            <div class="modal-body">
+               <h4 class="text-center">Congratulations!! You are a music expert!!</h4>
+            </div>
+            <div class="modal-footer justify-content-center">
+               <a class="btn btn-secondary btn-lg" id="button-tryAgain" href="game.html">Play Again</a>
                <a class="btn btn-secondary btn-lg" id="button-home" href="index.html">Go Home</a>
             </div>
          </div>
