@@ -1,7 +1,9 @@
 # **Hackathon Hero!** 
 ## *Put your music knowledge to the test!*
 
-![image info]()
+![View the live project here.](https://wierdlygoodcoder.github.io/hackathon-team-7/)
+
+![Responsive Mockup]()
 
 ## User Stories
 
