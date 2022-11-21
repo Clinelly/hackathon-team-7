@@ -1,117 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <title>Hackathon Hero | Home</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="game.html">Game</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                        </li>
-                    </ul>
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="game.html">Game</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                     </li>
+                  </ul>
+               </div>
             </div>
-        </nav>
+         </nav>
     </header>
 
-    <body id="home_body">
-            <div id="header_div">
-                <h1>Hackathon Hero!</h1>
-            </div>
-        <div class="greetings_container">
-            <div class="greetings_center">
+<body id="home_body">
+    <div class="container-fluid greetings_container">
+            <div class="col-md-12  greetings_center">
                 <p>Greetings music lovers!</p>
                 <p>So you think you're a multi-platinum, No.1, sell-out superstar?
-                    Well now is your chance to prove it!
-                    Take our jammin' music quiz to find out if you're a Rock God...
-                    ...or a Dog Rock!
-                </p>
+                Well now is your chance to prove it!
+                Take our jammin' music quiz to find out if you're a Rock God...
+                ...or a Dog Rock!
+            </p>
             </div>
         </div>
-        <div class="rules_container">
-            <div class="rules_center">
+    </div>
+        <div class="container-fluid rules_container">
+            <div class="col-md-12 rules_center">
                 <p>The rules are simple:</p>
-                <p>Answer a multiple-choice music question.</p>
-                <p>Get it right, you'll light the keyboard up with a letter</p>
+                <p>Answer a multiple-choice music question. Get it right, you'll light the keyboard up with a letter</p>
                 <p>Get it wrong, and you won't.</p>
                 <p>Enter the correct word at the end to win!</p>
             </div>
         </div>
-
         <a class="btn btn-secondary mb-3" id="button" href="game.html">Play</a>
 
     <!--JavaScript Link-->
     <script src="assets/js/script.js"></script>
 </body>
-
-        <!-- Button trigger modal -->
-        <div id="play-div">
-            <button id="play-btn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Play Game
-            </button>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Would you like to play the game?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"><a class="model-link" href="game.html">play
-                                    game</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--JavaScript Link-->
-            <script src="assets/js/script.js"></script>
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
-    </body>
-
 </html>
