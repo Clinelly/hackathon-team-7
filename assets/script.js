@@ -70,11 +70,6 @@ let questions = [{
         incorrect: ["lithophone", "bullroarer", "trumpet"],
         correct: ["flute"]
     },
-    {
-        question: "Who sings the song 'La camisa negra'? ",
-        incorrect: ["Ricky Martin", "Enrique Iglesia", "Luis Fonsi"],
-        correct: ["Juanes"]
-    },
 
 ]
 // start the quiz
@@ -132,7 +127,7 @@ function selectAnswer(e) {
     }
     setTimeout(() => {
         e.target.style.backgroundColor = "#F6F3E8ff";
-        e.target.style.color = "#1D3461";
+        e.target.style.color = "black";
     }, 1000);
 
 }
@@ -182,16 +177,22 @@ function dontDisplayLetter() {
 // check final answer
 function checkAnswer() {
     let answerValue = document.getElementById('finalAnswer').value;
+
     if (answerValue == selectedWord) {
         alert("You won!");
         location.reload();
-    } else {
-        if (wrongAnswersCounter >= 2) {
-            alert("You lost the game.");
-            window.location = "https://8000-marcellomuy-hackathonte-t5d6ye6aw8i.ws-eu77.gitpod.io/index.html"
-        } else {
-            alert("Wrong answer.");
-            wrongAnswersCounter++;
-        }
     }
+      else if (wrongAnswersCounter == 2){
+        $("#gameOver-Modal").modal('show');
+        
+    } else if (answerValue !== selectedWord){
+        $("#wrongAnswer-Modal").modal('show');
+        wrongAnswersCounter++;
+        console.log(wrongAnswersCounter)
+    } else {
+        alert("ok")
+    }
+    
+    
+ 
 }

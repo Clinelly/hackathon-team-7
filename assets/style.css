@@ -65,8 +65,15 @@ body {
 
 /*greetings div*/
 
+
+#keyboard-area{
+  margin-top:10px;
+  margin-left: 30%;
+}
+
 .keybord-container {
   margin-left: 35%;
+
 }
 
 .greetings_container,
@@ -127,6 +134,41 @@ body {
   font-size: 15px;
   height: 20vh;
 }
+
+
+.question-area{
+    background-color: rgb(16, 19, 20) ;
+  }
+  .question-panel{
+    background-color: rgb(179, 206, 56);
+    color:#F6F3E8ff;
+    font-family:'Roboto', sans-serif;
+    height: 15vh;
+  }
+  .question-content{
+    font-size: 23px;
+    font-weight: 400; 
+  }
+
+  .key-style {
+    height: 100px;
+    min-width: 50px;
+    max-width: 50px;
+    font-size: 50px;
+    
+  }
+  .answers
+  {
+     background-color: #F6F3E8ff;
+     font-family: 'Roboto', sans-serif;
+     color: rgb(19, 21, 22);
+     font-size:20px;
+     margin: 0px 10px;
+     margin-bottom: 10px;
+     height:8vh;
+    
+   }
+  .model-link {
 
 .question-content {
   font-size: 30px;
@@ -225,6 +267,41 @@ h2 {
   color: aliceblue;
 }
 
+
+#next-button{
+
+  background-color: #F6F3E8ff;
+  height:6vh;
+  margin-bottom: 10px;
+  padding-top: 3px;
+}
+
+  /* --------------------------------------------> media queries */
+@media only screen and (max-width: 800px){
+    .question-content {
+      font-size: 25px;
+      margin-top: 15px;
+     
+    }
+
+
+  #keyboard-area{
+    margin-top:10px;
+    margin-left: 8px;
+  }
+
+    .key-style {
+      height: 100px;
+      min-width: 30px;
+      max-width: 30px;
+      font-size: 30px;
+      
+    }
+  }
+    
+    
+  
+
 /* --------------------------------------------> media queries */
 @media only screen and (max-width: 800px) {
   .question-content {
@@ -245,3 +322,4 @@ h2 {
   height: 10vh;
 
 }
+

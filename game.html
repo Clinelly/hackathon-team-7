@@ -43,19 +43,19 @@
         <div class="container-fluid ">
            <div class="row justify-content-center ">
               <div class="col-xs-12 col-md-6 m-2 question-panel">
-                 <p class= "question-content text-center mt-lg-5" id="question-content">Question Loading...</p>
+                 <p class= "question-content text-center mt-lg-3" id="question-content">Question Loading...</p>
               </div>
            </div>
         </div>
         <!-- Answers section-->  
         <div class="container-fluid mt-lg-3 mt-md-3 answer-area">
            <div class="row justify-content-center">
-              <div class="col-md-3 col-xs-6 pt-lg-3 text-center answers" id="option1"></div>
-              <div class="col-md-3 col-xs-6 pt-lg-3 text-center answers" id="option2"></div>
+              <div class="col-md-3 col-xs-6 pt-lg-2 text-center answers" id="option1"></div>
+              <div class="col-md-3 col-xs-6 pt-lg-2 text-center answers" id="option2"></div>
            </div>
            <div class="row justify-content-center">
-              <div class="col-md-3 col-xs-6 pt-lg-4 text-center answers" id="option3"></div>
-              <div class="col-md-3 col-xs-6 pt-lg-4 text-center answers" id="option4"></div>
+              <div class="col-md-3 col-xs-6 pt-lg-2 text-center answers" id="option3"></div>
+              <div class="col-md-3 col-xs-6 pt-lg-2 text-center answers" id="option4"></div>
            </div>
            <div class="row justify-content-center">
            <div class="col-md-1 text-center" id="next-button">Next</div>
@@ -63,24 +63,64 @@
         </div>
      </section>
      <!-- Keyboard section -->
-     <section>
-         <div class="container-fluid keybord-container">
-      <div class="row justify-content-center mt-3">
+     <section class="container">
+      <div class="row">
+         <div class="col">
+         
          <div id="keyboard-area" class="row"></div>
-      </div>
+   
+     
+     <!-- Answer section --> 
+      <form class="text-center mr-5 mt-4" type="submit" onsubmit="checkAnswer();return false">
+         <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">Word guess</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" id="finalAnswer" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+              <span id="passwordHelpInline" class="form-text">
+               <input type="submit">
+              </span>
+            </div>
+          </div>
+          </form>
+         </div>
+         </div>
      </section>
-     <!-- Answer section -->
-     <section class="row">
-         <form class="text-center" type="submit" onsubmit="checkAnswer();return false">
-            <label for="finalAnswer"></label>
-            <input id="finalAnswer" class="border mt-2" type="text" placeholder="Type answer here">
-            <input type="submit">
-         </form>
-      </div>
-     </section>
-      
-      
 
+     <div class="modal fade" id="wrongAnswer-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+               <h4 class="text-center">Oh no! Wrong Letter</h4>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="modal fade" id="gameOver-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <h5 class="modal-title" id="exampleModalLabel">Game Over</h5>
+            <div class="modal-body">
+               <h4 class="text-center">Oh no! You lost the game!</h4>
+            </div>
+            <div class="modal-footer justify-content-center">
+               <a class="btn btn-secondary btn-lg" id="button-tryAgain" href="game.html">Try Again</a>
+               <a class="btn btn-secondary btn-lg" id="button-home" href="index.html">Go Home</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   
+    
+   <!-- End of modal-->  
+      
+      
+   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
      <script src="assets/script.js"></script>
 </body>
 </html>
