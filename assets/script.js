@@ -189,7 +189,7 @@ function dontDisplayLetter() {
 
 // check final answer
 function checkAnswer() {
-    let answerValue = toLowerCase(document.getElementById('finalAnswer').value);
+    let answerValue = document.getElementById('finalAnswer').value;
 
     if (answerValue == selectedWord) {
         $("#gameWin-Modal").modal('show');
