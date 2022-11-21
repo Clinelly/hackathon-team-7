@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 /*Header and nav*/
@@ -10,76 +10,84 @@ body {
 }
 
 .navbar {
-  background-color: rgb(179, 206, 56)!important;
- 
- }
- .navbar-toggler{
-   color: rgba(179, 206, 56) !important;
-   background-color:#F6F3E8ff !important;
-   
- }
- 
- .nav-link {
-     font-size: 25px;
-     font-family: 'Roboto', sans-serif;
-     font-weight: 400;
-     color: #F6F3E8ff!important; 
-     transition: all 0.35s ease-in-out;
-     -moz-transition: all 0.35s ease-in-out;
-     -webkit-transition: all 0.35s ease-in-out;
-     -o-transition: all 0.35s ease-in-out;
-     margin-right: 20px;
-     
-     
- }
- 
- .nav-item a:hover {
-     color:  rgba(179, 206, 56) !important;
-     background-color: #F6F3E8ff;
- }
+  background-color: rgb(179, 206, 56) !important;
 
- .btn{
+}
+
+.navbar-toggler {
+  color: rgba(179, 206, 56) !important;
+  background-color: #F6F3E8ff !important;
+
+}
+
+.nav-link {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: rgb(43, 88, 6) !important;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  margin-right: 20px;
+
+
+}
+
+.nav-item a:hover {
+  color: rgba(179, 206, 56) !important;
+  background-color: #F6F3E8ff;
+}
+
+.btn {
   padding: 5px 20px;
   font-size: 30px;
   background-color: rgba(179, 206, 56);
-   
-}
-.btn:hover{
-background-color: #F6F3E8ff!important;
-color:#294A58ff ;
+
 }
 
-
-
-#header {
-  display: flex;
-  justify-content: space-between;
-  color: white;
+.btn:hover {
+  background-color: #F6F3E8ff !important;
+  color: #294A58ff;
 }
 
 #header_div {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#header_div h1 {
+  align-self: center;
 }
 
 /*greetings div*/
 
-.keybord-container{
+.keybord-container {
   margin-left: 35%;
 }
 
-.greetings_container, .rules_container {
-  height: 200px;
+.greetings_container,
+.rules_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
   position: relative;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px auto;
   color: white;
   background-color: rgba(179, 206, 56, 0.788);
   width: 70%;
   align-self: center;
 }
 
-.greetings_center, .rules_center {
-  margin: 0;
+.greetings_center,
+.rules_center {
+  align-self: center;
+  margin: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -88,6 +96,17 @@ color:#294A58ff ;
   font-size: 20px;
 }
 
+#play-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#play-btn {
+  align-self: center;
+  background-color: rgba(179, 206, 56, 0.788);
+}
 
 #home_body {
   background: url(../assets/images/music_concert_background.jpg) no-repeat;
@@ -97,50 +116,45 @@ color:#294A58ff ;
   height: auto;
 }
 
-#game_div_one {
-    background-color: red;
-    height: auto;
-    width: 80%;
-    margin: auto;
-
+.question-area {
+  background-color: rgb(16, 19, 20);
 }
 
-.question-area{
-    background-color: rgb(16, 19, 20) ;
-  }
-  .question-panel{
-    background-color: rgb(179, 206, 56);
-    color:#F6F3E8ff;
-    font-family:'Roboto', sans-serif;
-    font-size: 15px;
-    height: 20vh;
-  }
-  .question-content{
-    font-size: 30px;
-    font-weight: 400; 
-  }
+.question-panel {
+  background-color: rgb(179, 206, 56);
+  color: #F6F3E8ff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  height: 20vh;
+}
 
-  .key-style {
-    height: 150px;
-    min-width: 50px;
-    max-width: 50px;
-    font-size: 50px;
-    padding-top: 25px;
-  }
+.question-content {
+  font-size: 30px;
+  font-weight: 400;
+}
 
-  .model-link {
+.key-style {
+  height: 150px;
+  min-width: 50px;
+  max-width: 50px;
+  font-size: 50px;
+  padding-top: 25px;
+}
+
+.model-link {
   text-decoration: none;
-  }
+}
+
 /* Style for 'About' Page */
 
 #about_nav {
   height: auto;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   width: fit-content;
   font-size: x-large;
 }
 
-#about_nav > a {
+#about_nav>a {
   padding: 10px;
   text-decoration: none;
   color: aliceblue;
@@ -156,7 +170,7 @@ color:#294A58ff ;
 }
 
 #about_body {
-  background: url(../assets/images/music_stage_background.webp) no-repeat;
+  background: url(../assets/images/music_stage_background_about.webp) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -171,11 +185,12 @@ color:#294A58ff ;
   height: auto;
   width: 50%;
   margin: 11% auto auto;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 
 }
 
-#about_container h1, h2 {
+#about_container h1,
+h2 {
   display: flex;
   justify-content: center;
   color: antiquewhite;
@@ -194,7 +209,7 @@ color:#294A58ff ;
 }
 
 .profile a {
-  color: aqua;
+  color: greenyellow;
 }
 
 #about_foot {
@@ -210,23 +225,23 @@ color:#294A58ff ;
   color: aliceblue;
 }
 
-  /* --------------------------------------------> media queries */
-@media only screen and (max-width: 800px){
-    .question-content {
-      font-size: 25px;
-      margin-top: 15px;
-     
-    }
+/* --------------------------------------------> media queries */
+@media only screen and (max-width: 800px) {
+  .question-content {
+    font-size: 25px;
+    margin-top: 15px;
+
+  }
 }
 
 .answers,
 #next-button {
-    background-color: #F6F3E8ff;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(19, 21, 22);
-    font-size:20px;
-    margin: 0px 10px;
-    margin-bottom: 10px;
-    height:10vh;
-   
-  }
+  background-color: #F6F3E8ff;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(19, 21, 22);
+  font-size: 20px;
+  margin: 0px 10px;
+  margin-bottom: 10px;
+  height: 10vh;
+
+}
