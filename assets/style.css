@@ -170,7 +170,7 @@ body {
 }
 
 #about_body {
-  background: url(../assets/images/music_stage_background.webp) no-repeat;
+  background: url(../assets/images/music_stage_background_about.webp) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -209,7 +209,7 @@ h2 {
 }
 
 .profile a {
-  color: aqua;
+  color: greenyellow;
 }
 
 #about_foot {
