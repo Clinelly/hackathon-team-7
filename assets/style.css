@@ -63,8 +63,13 @@ color:#294A58ff ;
 
 /*greetings div*/
 
-.keybord-container{
-  margin-left: 35%;
+#keyboard-area{
+  margin-top:10px;
+  margin-left: 30%;
+}
+
+.input-question{
+  color:black;
 }
 
 .greetings_container, .rules_container {
@@ -112,22 +117,31 @@ color:#294A58ff ;
     background-color: rgb(179, 206, 56);
     color:#F6F3E8ff;
     font-family:'Roboto', sans-serif;
-    font-size: 15px;
-    height: 20vh;
+    height: 15vh;
   }
   .question-content{
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 400; 
   }
 
   .key-style {
-    height: 150px;
+    height: 100px;
     min-width: 50px;
     max-width: 50px;
     font-size: 50px;
-    padding-top: 25px;
+    
   }
-
+  .answers
+  {
+     background-color: #F6F3E8ff;
+     font-family: 'Roboto', sans-serif;
+     color: rgb(19, 21, 22);
+     font-size:20px;
+     margin: 0px 10px;
+     margin-bottom: 10px;
+     height:8vh;
+    
+   }
   .model-link {
   text-decoration: none;
   }
@@ -210,6 +224,14 @@ color:#294A58ff ;
   color: aliceblue;
 }
 
+#next-button{
+
+  background-color: #F6F3E8ff;
+  height:6vh;
+  margin-bottom: 10px;
+  padding-top: 3px;
+}
+
   /* --------------------------------------------> media queries */
 @media only screen and (max-width: 800px){
     .question-content {
@@ -217,16 +239,21 @@ color:#294A58ff ;
       margin-top: 15px;
      
     }
-}
 
-.answers,
-#next-button {
-    background-color: #F6F3E8ff;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(19, 21, 22);
-    font-size:20px;
-    margin: 0px 10px;
-    margin-bottom: 10px;
-    height:10vh;
-   
+
+  #keyboard-area{
+    margin-top:10px;
+    margin-left: 8px;
   }
+
+    .key-style {
+      height: 100px;
+      min-width: 30px;
+      max-width: 30px;
+      font-size: 30px;
+      
+    }
+  }
+    
+    
+  
