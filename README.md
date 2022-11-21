@@ -3,7 +3,7 @@
 
 [View the live project here.](https://wierdlygoodcoder.github.io/hackathon-team-7/)
 
-![Responsive Mockup]()
+![Responsive Mockup](../assets/images/Mockup_hackathon.JPG)
 
 ## User Stories
 
