@@ -11,7 +11,7 @@ let turn = 0;
 let isButtonClicked = true;
 
 // List of words
-const words = ["saxophone", "trombone", "xylophone", "ukulele"]
+const words = ["violin", "trombone", "quitar", "ukulele"]
 
 //Select a random word from from list
 let selectedWord = words[Math.floor(Math.random() * words.length)];
@@ -79,6 +79,10 @@ let startQuiz = () => {
     getNewQuestion()
     curr_track.src = availableQuestions[turn].path;
     curr_track.play();
+    setTimeout(() => {
+        
+        curr_track.pause();
+    }, 3000);
 
     loadKeyboard();
     getNewQuestion();
@@ -89,7 +93,12 @@ next_button.addEventListener("click", () => {
     turn++;
     getNewQuestion()
     isButtonClicked = true
+    if (turn === 8){
+        $("#gameOver-Modal").modal('show');
+
+    }
 })
+
 
 
 // display questions & answers
@@ -119,7 +128,7 @@ function selectAnswer(e) {
     const userChoice = e.target.innerHTML;
     const correctChoice = availableQuestions[turn].correct[0];
     if (userChoice === correctChoice) {
-        e.target.style.backgroundColor = "green";
+        e.target.style.backgroundColor = "rgb(179, 206, 56)";
         displayLetter();
     } else {
         e.target.style.backgroundColor = "red";
@@ -130,6 +139,10 @@ function selectAnswer(e) {
         e.target.style.color = "black";
     }, 1000);
 
+}
+if (turn.length === 8) {
+    console.log(turn)
+    $("#gameOver-Modal").modal('show');
 }
 
 // display keyboard
@@ -161,7 +174,7 @@ function displayLetter() {
     for (let i = answersCounter; i == answersCounter && i < selectedWord.length; i++) {
         let keyDiv = document.getElementById('keyboard' + i);
         keyDiv.innerHTML = selectedWord.charAt(i);
-        keyDiv.style.backgroundColor = "green";
+        keyDiv.style.backgroundColor = "rgb(179, 206, 56)";
 }
 }
 
@@ -179,11 +192,10 @@ function checkAnswer() {
     let answerValue = document.getElementById('finalAnswer').value;
 
     if (answerValue == selectedWord) {
-        alert("You won!");
-        location.reload();
+        $("#gameWin-Modal").modal('show');
     }
       else if (wrongAnswersCounter == 2){
-        $("#gameOver-Modal").modal('show');
+        $("#noGuesses-Modal").modal('show');
         
     } else if (answerValue !== selectedWord){
         $("#wrongAnswer-Modal").modal('show');
