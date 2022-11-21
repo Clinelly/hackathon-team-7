@@ -11,7 +11,7 @@ let turn = 0;
 let isButtonClicked = true;
 
 // List of words
-const words = ["violin", "trombone", "quitar", "ukulele"]
+const words = ["violin", "trombone", "guitar", "ukulele"]
 
 //Select a random word from from list
 let selectedWord = words[Math.floor(Math.random() * words.length)];
