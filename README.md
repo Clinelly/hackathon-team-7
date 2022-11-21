@@ -30,7 +30,7 @@
 
 ## Credits
 
-* [Stage Background by Upklyak on FreePik](https://www.freepik.com/free-vector/movie-theater-with-white-screen-curtains-seats_33702600.htm#page=2&query=music%20audience&position=23&from_view=search&track=sph#position=23&page=2&query=music%20audience)
+* [Stage Background by MacroVector on FreePik](https://www.freepik.com/free-vector/spotlights-realistic-composition-with-set-six-spot-lights-hanging-reel-circle-plot_7286081.htm#query=green%20stage&position=41&from_view=search&track=sph)
 
 ## Developer Team
 
